@@ -1,0 +1,9 @@
+show_id,type,title,director,country,date_added,release_year,rating,duration,listed_in,country_missing,director_missing,duration_value,duration_unit,potential_duplicate_title
+s3997,TV Show,9-Feb,Unknown,Pakistan,2019-03-20,2018,TV-14,1 Season,"International TV Shows, TV Dramas",False,True,1,seasons,True
+s5965,TV Show,9-Feb,Unknown,Pakistan,2019-03-20,2018,TV-14,1 Season,"International TV Shows, TV Dramas",False,True,1,seasons,True
+s3372,Movie,Consequences,Ozan Açıktan,Turkey,2019-10-25,2014,TV-MA,106 min,"Dramas, International Movies, Thrillers",False,False,106,minutes,True
+s3963,Movie,15-Aug,Swapnaneel Jayakar,India,2019-03-29,2019,TV-14,124 min,"Comedies, Dramas, Independent Movies",False,False,124,minutes,True
+s4523,Movie,22-Jul,Paul Greengrass,Norway,2018-10-10,2018,R,144 min,"Dramas, Thrillers",False,False,144,minutes,True
+s5966,Movie,22-Jul,Paul Greengrass,Norway,2018-10-10,2018,R,144 min,"Dramas, Thrillers",False,False,144,minutes,True
+s5967,Movie,15-Aug,Swapnaneel Jayakar,India,2019-03-29,2019,TV-14,124 min,"Comedies, Dramas, Independent Movies",False,False,124,minutes,True
+s6530,Movie,Consequences,Ozan Açıktan,Turkey,2019-10-25,2014,TV-MA,106 min,"Dramas, International Movies, Thrillers",False,False,106,minutes,True

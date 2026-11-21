@@ -1,0 +1,23 @@
+test_bad_date_stops_pipeline (__main__.CleaningTests.test_bad_date_stops_pipeline) ... ok
+test_conflicting_id_stops_pipeline (__main__.CleaningTests.test_conflicting_id_stops_pipeline) ... ok
+test_duration_unit_mismatch_stops_pipeline (__main__.CleaningTests.test_duration_unit_mismatch_stops_pipeline) ... ok
+test_exact_duplicate_removed (__main__.CleaningTests.test_exact_duplicate_removed) ... ok
+test_formatting_and_date_normalized (__main__.CleaningTests.test_formatting_and_date_normalized) ... ok
+test_invalid_type_stops_pipeline (__main__.CleaningTests.test_invalid_type_stops_pipeline) ... ok
+test_invalid_year_stops_pipeline (__main__.CleaningTests.test_invalid_year_stops_pipeline) ... ok
+test_literal_unknown_title_is_preserved (__main__.CleaningTests.test_literal_unknown_title_is_preserved) ... ok
+test_missing_country_remains_unknown (__main__.CleaningTests.test_missing_country_remains_unknown) ... ok
+test_multi_country_counts_once_per_title (__main__.CleaningTests.test_multi_country_counts_once_per_title) ... ok
+test_null_country_and_director_not_guessed (__main__.CleaningTests.test_null_country_and_director_not_guessed) ... ok
+test_country_memberships_reconcile (__main__.SourceReconciliationTests.test_country_memberships_reconcile) ... ok
+test_genre_memberships_reconcile (__main__.SourceReconciliationTests.test_genre_memberships_reconcile) ... ok
+test_id_and_title_integrity (__main__.SourceReconciliationTests.test_id_and_title_integrity) ... ok
+test_rating_matrix_and_shares_reconcile (__main__.SourceReconciliationTests.test_rating_matrix_and_shares_reconcile) ... ok
+test_snapshot_matches_exported_tables (__main__.SourceReconciliationTests.test_snapshot_matches_exported_tables) ... ok
+test_types_independently_reconcile (__main__.SourceReconciliationTests.test_types_independently_reconcile) ... ok
+test_year_counts_and_yoy_reconcile (__main__.SourceReconciliationTests.test_year_counts_and_yoy_reconcile) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.462s
+
+OK

@@ -1,0 +1,1876 @@
+{
+  "surface": "report",
+  "title": "Movies dominate the supplied Netflix title sample",
+  "generatedAt": "2026-10-29T00:00:00Z",
+  "status": "reviewed",
+  "buildStatus": "complete",
+  "filters": [],
+  "exportPreferences": {
+    "selected": null,
+    "destinations": []
+  },
+  "report": {
+    "asOf": "2021-09-25"
+  },
+  "queries": {
+    "types": {
+      "rows": [
+        {
+          "type": "Movie",
+          "titles": 6126,
+          "share_pct": 69.6928327645
+        },
+        {
+          "type": "TV Show",
+          "titles": 2664,
+          "share_pct": 30.3071672355
+        }
+      ],
+      "methods": [
+        {
+          "language": "python",
+          "code": "Run python analyze.py; see aggregate() for types transformation."
+        }
+      ],
+      "source": {
+        "name": "Auspify supplied Dataset.csv",
+        "provider": "Google Drive",
+        "files": [
+          "data/raw/Dataset.csv"
+        ],
+        "updatedAt": "2021-09-25T00:00:00Z",
+        "links": [
+          {
+            "label": "Supplied dataset",
+            "url": "https://drive.google.com/file/d/1xDLw0Z9Uc3YHRgU6ExrZHzWfyRiVtfdz/view"
+          }
+        ],
+        "metricDefinitions": [
+          {
+            "label": "types",
+            "definition": "Distinct show_id count per content type. Share denominator is all cleaned titles.",
+            "componentIds": [
+              "content-types"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Retrieve assigned source",
+            "detail": "Google Drive fetch of supplied Dataset.csv, file ID 1xDLw0Z9Uc3YHRgU6ExrZHzWfyRiVtfdz; complete raw response, 1,071,619 bytes."
+          },
+          {
+            "title": "Clean and aggregate",
+            "detail": "analyze.py clean_data() and aggregate(); outputs retained under tasks/. Upstream collection methodology and country-tag meaning are undocumented."
+          }
+        ],
+        "caveats": [
+          "Historical supplied sample; latest date_added is 2021-09-25. Not a current Netflix catalog.",
+          "Distinct show_id count per content type. Share denominator is all cleaned titles."
+        ]
+      }
+    },
+    "countries": {
+      "rows": [
+        {
+          "country": "United States",
+          "titles": 3240,
+          "share_of_all_titles_pct": 36.8600682594,
+          "rank_known": 1
+        },
+        {
+          "country": "India",
+          "titles": 1057,
+          "share_of_all_titles_pct": 12.0250284414,
+          "rank_known": 2
+        },
+        {
+          "country": "United Kingdom",
+          "titles": 638,
+          "share_of_all_titles_pct": 7.2582480091,
+          "rank_known": 3
+        },
+        {
+          "country": "Pakistan",
+          "titles": 421,
+          "share_of_all_titles_pct": 4.7895335609,
+          "rank_known": 4
+        },
+        {
+          "country": "Unknown",
+          "titles": 287,
+          "share_of_all_titles_pct": 3.2650739477,
+          "rank_known": null
+        },
+        {
+          "country": "Canada",
+          "titles": 271,
+          "share_of_all_titles_pct": 3.0830489192,
+          "rank_known": 5
+        },
+        {
+          "country": "Japan",
+          "titles": 259,
+          "share_of_all_titles_pct": 2.9465301479,
+          "rank_known": 6
+        },
+        {
+          "country": "South Korea",
+          "titles": 214,
+          "share_of_all_titles_pct": 2.4345847554,
+          "rank_known": 7
+        },
+        {
+          "country": "France",
+          "titles": 213,
+          "share_of_all_titles_pct": 2.4232081911,
+          "rank_known": 8
+        },
+        {
+          "country": "Spain",
+          "titles": 182,
+          "share_of_all_titles_pct": 2.0705346985,
+          "rank_known": 9
+        },
+        {
+          "country": "Mexico",
+          "titles": 138,
+          "share_of_all_titles_pct": 1.5699658703,
+          "rank_known": 10
+        },
+        {
+          "country": "Egypt",
+          "titles": 123,
+          "share_of_all_titles_pct": 1.3993174061,
+          "rank_known": 11
+        },
+        {
+          "country": "Australia",
+          "titles": 114,
+          "share_of_all_titles_pct": 1.2969283276,
+          "rank_known": 12
+        },
+        {
+          "country": "Turkey",
+          "titles": 112,
+          "share_of_all_titles_pct": 1.2741751991,
+          "rank_known": 13
+        },
+        {
+          "country": "Nigeria",
+          "titles": 105,
+          "share_of_all_titles_pct": 1.1945392491,
+          "rank_known": 14
+        },
+        {
+          "country": "Germany",
+          "titles": 104,
+          "share_of_all_titles_pct": 1.1831626849,
+          "rank_known": 15
+        },
+        {
+          "country": "China",
+          "titles": 100,
+          "share_of_all_titles_pct": 1.1376564278,
+          "rank_known": 16
+        },
+        {
+          "country": "Brazil",
+          "titles": 88,
+          "share_of_all_titles_pct": 1.0011376564,
+          "rank_known": 17
+        },
+        {
+          "country": "Indonesia",
+          "titles": 86,
+          "share_of_all_titles_pct": 0.9783845279,
+          "rank_known": 18
+        },
+        {
+          "country": "Taiwan",
+          "titles": 86,
+          "share_of_all_titles_pct": 0.9783845279,
+          "rank_known": 19
+        },
+        {
+          "country": "Philippines",
+          "titles": 83,
+          "share_of_all_titles_pct": 0.944254835,
+          "rank_known": 20
+        },
+        {
+          "country": "Hong Kong",
+          "titles": 79,
+          "share_of_all_titles_pct": 0.8987485779,
+          "rank_known": 21
+        },
+        {
+          "country": "Argentina",
+          "titles": 76,
+          "share_of_all_titles_pct": 0.8646188851,
+          "rank_known": 22
+        },
+        {
+          "country": "Italy",
+          "titles": 66,
+          "share_of_all_titles_pct": 0.7508532423,
+          "rank_known": 23
+        },
+        {
+          "country": "Thailand",
+          "titles": 66,
+          "share_of_all_titles_pct": 0.7508532423,
+          "rank_known": 24
+        },
+        {
+          "country": "Colombia",
+          "titles": 42,
+          "share_of_all_titles_pct": 0.4778156997,
+          "rank_known": 25
+        },
+        {
+          "country": "South Africa",
+          "titles": 42,
+          "share_of_all_titles_pct": 0.4778156997,
+          "rank_known": 26
+        },
+        {
+          "country": "Denmark",
+          "titles": 30,
+          "share_of_all_titles_pct": 0.3412969283,
+          "rank_known": 27
+        },
+        {
+          "country": "Poland",
+          "titles": 30,
+          "share_of_all_titles_pct": 0.3412969283,
+          "rank_known": 28
+        },
+        {
+          "country": "Ireland",
+          "titles": 28,
+          "share_of_all_titles_pct": 0.3185437998,
+          "rank_known": 29
+        },
+        {
+          "country": "Netherlands",
+          "titles": 28,
+          "share_of_all_titles_pct": 0.3185437998,
+          "rank_known": 30
+        },
+        {
+          "country": "Singapore",
+          "titles": 28,
+          "share_of_all_titles_pct": 0.3185437998,
+          "rank_known": 31
+        },
+        {
+          "country": "Lebanon",
+          "titles": 24,
+          "share_of_all_titles_pct": 0.2730375427,
+          "rank_known": 32
+        },
+        {
+          "country": "Malaysia",
+          "titles": 23,
+          "share_of_all_titles_pct": 0.2616609784,
+          "rank_known": 33
+        },
+        {
+          "country": "Chile",
+          "titles": 22,
+          "share_of_all_titles_pct": 0.2502844141,
+          "rank_known": 34
+        },
+        {
+          "country": "Israel",
+          "titles": 22,
+          "share_of_all_titles_pct": 0.2502844141,
+          "rank_known": 35
+        },
+        {
+          "country": "Norway",
+          "titles": 21,
+          "share_of_all_titles_pct": 0.2389078498,
+          "rank_known": 36
+        },
+        {
+          "country": "United Arab Emirates",
+          "titles": 21,
+          "share_of_all_titles_pct": 0.2389078498,
+          "rank_known": 37
+        },
+        {
+          "country": "Russia",
+          "titles": 19,
+          "share_of_all_titles_pct": 0.2161547213,
+          "rank_known": 38
+        },
+        {
+          "country": "Sweden",
+          "titles": 19,
+          "share_of_all_titles_pct": 0.2161547213,
+          "rank_known": 39
+        },
+        {
+          "country": "Belgium",
+          "titles": 18,
+          "share_of_all_titles_pct": 0.204778157,
+          "rank_known": 40
+        },
+        {
+          "country": "New Zealand",
+          "titles": 17,
+          "share_of_all_titles_pct": 0.1934015927,
+          "rank_known": 41
+        },
+        {
+          "country": "Saudi Arabia",
+          "titles": 12,
+          "share_of_all_titles_pct": 0.1365187713,
+          "rank_known": 42
+        },
+        {
+          "country": "Romania",
+          "titles": 10,
+          "share_of_all_titles_pct": 0.1137656428,
+          "rank_known": 43
+        },
+        {
+          "country": "Austria",
+          "titles": 9,
+          "share_of_all_titles_pct": 0.1023890785,
+          "rank_known": 44
+        },
+        {
+          "country": "Uruguay",
+          "titles": 9,
+          "share_of_all_titles_pct": 0.1023890785,
+          "rank_known": 45
+        },
+        {
+          "country": "Switzerland",
+          "titles": 8,
+          "share_of_all_titles_pct": 0.0910125142,
+          "rank_known": 46
+        },
+        {
+          "country": "Kuwait",
+          "titles": 7,
+          "share_of_all_titles_pct": 0.0796359499,
+          "rank_known": 47
+        },
+        {
+          "country": "Vietnam",
+          "titles": 7,
+          "share_of_all_titles_pct": 0.0796359499,
+          "rank_known": 48
+        },
+        {
+          "country": "Czech Republic",
+          "titles": 6,
+          "share_of_all_titles_pct": 0.0682593857,
+          "rank_known": 49
+        },
+        {
+          "country": "Finland",
+          "titles": 6,
+          "share_of_all_titles_pct": 0.0682593857,
+          "rank_known": 50
+        },
+        {
+          "country": "Iceland",
+          "titles": 6,
+          "share_of_all_titles_pct": 0.0682593857,
+          "rank_known": 51
+        },
+        {
+          "country": "Peru",
+          "titles": 6,
+          "share_of_all_titles_pct": 0.0682593857,
+          "rank_known": 52
+        },
+        {
+          "country": "Bulgaria",
+          "titles": 5,
+          "share_of_all_titles_pct": 0.0568828214,
+          "rank_known": 53
+        },
+        {
+          "country": "Hungary",
+          "titles": 5,
+          "share_of_all_titles_pct": 0.0568828214,
+          "rank_known": 54
+        },
+        {
+          "country": "Ghana",
+          "titles": 4,
+          "share_of_all_titles_pct": 0.0455062571,
+          "rank_known": 55
+        },
+        {
+          "country": "Kenya",
+          "titles": 4,
+          "share_of_all_titles_pct": 0.0455062571,
+          "rank_known": 56
+        },
+        {
+          "country": "Portugal",
+          "titles": 4,
+          "share_of_all_titles_pct": 0.0455062571,
+          "rank_known": 57
+        },
+        {
+          "country": "Bangladesh",
+          "titles": 3,
+          "share_of_all_titles_pct": 0.0341296928,
+          "rank_known": 58
+        },
+        {
+          "country": "Serbia",
+          "titles": 3,
+          "share_of_all_titles_pct": 0.0341296928,
+          "rank_known": 59
+        },
+        {
+          "country": "Cambodia",
+          "titles": 2,
+          "share_of_all_titles_pct": 0.0227531286,
+          "rank_known": 60
+        },
+        {
+          "country": "Croatia",
+          "titles": 2,
+          "share_of_all_titles_pct": 0.0227531286,
+          "rank_known": 61
+        },
+        {
+          "country": "Georgia",
+          "titles": 2,
+          "share_of_all_titles_pct": 0.0227531286,
+          "rank_known": 62
+        },
+        {
+          "country": "Jordan",
+          "titles": 2,
+          "share_of_all_titles_pct": 0.0227531286,
+          "rank_known": 63
+        },
+        {
+          "country": "Mauritius",
+          "titles": 2,
+          "share_of_all_titles_pct": 0.0227531286,
+          "rank_known": 64
+        },
+        {
+          "country": "Syria",
+          "titles": 2,
+          "share_of_all_titles_pct": 0.0227531286,
+          "rank_known": 65
+        },
+        {
+          "country": "Ukraine",
+          "titles": 2,
+          "share_of_all_titles_pct": 0.0227531286,
+          "rank_known": 66
+        },
+        {
+          "country": "Venezuela",
+          "titles": 2,
+          "share_of_all_titles_pct": 0.0227531286,
+          "rank_known": 67
+        },
+        {
+          "country": "Belarus",
+          "titles": 1,
+          "share_of_all_titles_pct": 0.0113765643,
+          "rank_known": 68
+        },
+        {
+          "country": "Cameroon",
+          "titles": 1,
+          "share_of_all_titles_pct": 0.0113765643,
+          "rank_known": 69
+        },
+        {
+          "country": "Cyprus",
+          "titles": 1,
+          "share_of_all_titles_pct": 0.0113765643,
+          "rank_known": 70
+        },
+        {
+          "country": "Greece",
+          "titles": 1,
+          "share_of_all_titles_pct": 0.0113765643,
+          "rank_known": 71
+        },
+        {
+          "country": "Guatemala",
+          "titles": 1,
+          "share_of_all_titles_pct": 0.0113765643,
+          "rank_known": 72
+        },
+        {
+          "country": "Iran",
+          "titles": 1,
+          "share_of_all_titles_pct": 0.0113765643,
+          "rank_known": 73
+        },
+        {
+          "country": "Jamaica",
+          "titles": 1,
+          "share_of_all_titles_pct": 0.0113765643,
+          "rank_known": 74
+        },
+        {
+          "country": "Luxembourg",
+          "titles": 1,
+          "share_of_all_titles_pct": 0.0113765643,
+          "rank_known": 75
+        },
+        {
+          "country": "Mozambique",
+          "titles": 1,
+          "share_of_all_titles_pct": 0.0113765643,
+          "rank_known": 76
+        },
+        {
+          "country": "Namibia",
+          "titles": 1,
+          "share_of_all_titles_pct": 0.0113765643,
+          "rank_known": 77
+        },
+        {
+          "country": "Paraguay",
+          "titles": 1,
+          "share_of_all_titles_pct": 0.0113765643,
+          "rank_known": 78
+        },
+        {
+          "country": "Puerto Rico",
+          "titles": 1,
+          "share_of_all_titles_pct": 0.0113765643,
+          "rank_known": 79
+        },
+        {
+          "country": "Senegal",
+          "titles": 1,
+          "share_of_all_titles_pct": 0.0113765643,
+          "rank_known": 80
+        },
+        {
+          "country": "Slovenia",
+          "titles": 1,
+          "share_of_all_titles_pct": 0.0113765643,
+          "rank_known": 81
+        },
+        {
+          "country": "Somalia",
+          "titles": 1,
+          "share_of_all_titles_pct": 0.0113765643,
+          "rank_known": 82
+        },
+        {
+          "country": "Soviet Union",
+          "titles": 1,
+          "share_of_all_titles_pct": 0.0113765643,
+          "rank_known": 83
+        },
+        {
+          "country": "West Germany",
+          "titles": 1,
+          "share_of_all_titles_pct": 0.0113765643,
+          "rank_known": 84
+        },
+        {
+          "country": "Zimbabwe",
+          "titles": 1,
+          "share_of_all_titles_pct": 0.0113765643,
+          "rank_known": 85
+        }
+      ],
+      "methods": [
+        {
+          "language": "python",
+          "code": "Run python analyze.py; see aggregate() for countries transformation."
+        }
+      ],
+      "source": {
+        "name": "Auspify supplied Dataset.csv",
+        "provider": "Google Drive",
+        "files": [
+          "data/raw/Dataset.csv"
+        ],
+        "updatedAt": "2021-09-25T00:00:00Z",
+        "links": [
+          {
+            "label": "Supplied dataset",
+            "url": "https://drive.google.com/file/d/1xDLw0Z9Uc3YHRgU6ExrZHzWfyRiVtfdz/view"
+          }
+        ],
+        "metricDefinitions": [
+          {
+            "label": "countries",
+            "definition": "Distinct title IDs per listed country. Unknown is retained. Multi-country shares can overlap; country is not a viewing-availability field.",
+            "componentIds": [
+              "country-rankings"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Retrieve assigned source",
+            "detail": "Google Drive fetch of supplied Dataset.csv, file ID 1xDLw0Z9Uc3YHRgU6ExrZHzWfyRiVtfdz; complete raw response, 1,071,619 bytes."
+          },
+          {
+            "title": "Clean and aggregate",
+            "detail": "analyze.py clean_data() and aggregate(); outputs retained under tasks/. Upstream collection methodology and country-tag meaning are undocumented."
+          }
+        ],
+        "caveats": [
+          "Historical supplied sample; latest date_added is 2021-09-25. Not a current Netflix catalog.",
+          "Distinct title IDs per listed country. Unknown is retained. Multi-country shares can overlap; country is not a viewing-availability field."
+        ]
+      }
+    },
+    "years": {
+      "rows": [
+        {
+          "release_year": 1925,
+          "Movie": 0,
+          "TV Show": 1,
+          "total": 1,
+          "change_titles": null,
+          "change_pct": null
+        },
+        {
+          "release_year": 1926,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": -1,
+          "change_pct": -100.0
+        },
+        {
+          "release_year": 1927,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1928,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1929,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1930,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1931,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1932,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1933,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1934,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1935,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1936,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1937,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1938,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1939,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1940,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1941,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1942,
+          "Movie": 2,
+          "TV Show": 0,
+          "total": 2,
+          "change_titles": 2,
+          "change_pct": null
+        },
+        {
+          "release_year": 1943,
+          "Movie": 3,
+          "TV Show": 0,
+          "total": 3,
+          "change_titles": 1,
+          "change_pct": 50.0
+        },
+        {
+          "release_year": 1944,
+          "Movie": 3,
+          "TV Show": 0,
+          "total": 3,
+          "change_titles": 0,
+          "change_pct": 0.0
+        },
+        {
+          "release_year": 1945,
+          "Movie": 3,
+          "TV Show": 1,
+          "total": 4,
+          "change_titles": 1,
+          "change_pct": 33.3333333333
+        },
+        {
+          "release_year": 1946,
+          "Movie": 1,
+          "TV Show": 1,
+          "total": 2,
+          "change_titles": -2,
+          "change_pct": -50.0
+        },
+        {
+          "release_year": 1947,
+          "Movie": 1,
+          "TV Show": 0,
+          "total": 1,
+          "change_titles": -1,
+          "change_pct": -50.0
+        },
+        {
+          "release_year": 1948,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": -1,
+          "change_pct": -100.0
+        },
+        {
+          "release_year": 1949,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1950,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1951,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1952,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1953,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": 0,
+          "change_pct": null
+        },
+        {
+          "release_year": 1954,
+          "Movie": 2,
+          "TV Show": 0,
+          "total": 2,
+          "change_titles": 2,
+          "change_pct": null
+        },
+        {
+          "release_year": 1955,
+          "Movie": 3,
+          "TV Show": 0,
+          "total": 3,
+          "change_titles": 1,
+          "change_pct": 50.0
+        },
+        {
+          "release_year": 1956,
+          "Movie": 2,
+          "TV Show": 0,
+          "total": 2,
+          "change_titles": -1,
+          "change_pct": -33.3333333333
+        },
+        {
+          "release_year": 1957,
+          "Movie": 0,
+          "TV Show": 0,
+          "total": 0,
+          "change_titles": -2,
+          "change_pct": -100.0
+        },
+        {
+          "release_year": 1958,
+          "Movie": 3,
+          "TV Show": 0,
+          "total": 3,
+          "change_titles": 3,
+          "change_pct": null
+        },
+        {
+          "release_year": 1959,
+          "Movie": 1,
+          "TV Show": 0,
+          "total": 1,
+          "change_titles": -2,
+          "change_pct": -66.6666666667
+        },
+        {
+          "release_year": 1960,
+          "Movie": 4,
+          "TV Show": 0,
+          "total": 4,
+          "change_titles": 3,
+          "change_pct": 300.0
+        },
+        {
+          "release_year": 1961,
+          "Movie": 1,
+          "TV Show": 0,
+          "total": 1,
+          "change_titles": -3,
+          "change_pct": -75.0
+        },
+        {
+          "release_year": 1962,
+          "Movie": 3,
+          "TV Show": 0,
+          "total": 3,
+          "change_titles": 2,
+          "change_pct": 200.0
+        },
+        {
+          "release_year": 1963,
+          "Movie": 1,
+          "TV Show": 1,
+          "total": 2,
+          "change_titles": -1,
+          "change_pct": -33.3333333333
+        },
+        {
+          "release_year": 1964,
+          "Movie": 2,
+          "TV Show": 0,
+          "total": 2,
+          "change_titles": 0,
+          "change_pct": 0.0
+        },
+        {
+          "release_year": 1965,
+          "Movie": 2,
+          "TV Show": 0,
+          "total": 2,
+          "change_titles": 0,
+          "change_pct": 0.0
+        },
+        {
+          "release_year": 1966,
+          "Movie": 1,
+          "TV Show": 0,
+          "total": 1,
+          "change_titles": -1,
+          "change_pct": -50.0
+        },
+        {
+          "release_year": 1967,
+          "Movie": 4,
+          "TV Show": 1,
+          "total": 5,
+          "change_titles": 4,
+          "change_pct": 400.0
+        },
+        {
+          "release_year": 1968,
+          "Movie": 3,
+          "TV Show": 0,
+          "total": 3,
+          "change_titles": -2,
+          "change_pct": -40.0
+        },
+        {
+          "release_year": 1969,
+          "Movie": 2,
+          "TV Show": 0,
+          "total": 2,
+          "change_titles": -1,
+          "change_pct": -33.3333333333
+        },
+        {
+          "release_year": 1970,
+          "Movie": 2,
+          "TV Show": 0,
+          "total": 2,
+          "change_titles": 0,
+          "change_pct": 0.0
+        },
+        {
+          "release_year": 1971,
+          "Movie": 5,
+          "TV Show": 0,
+          "total": 5,
+          "change_titles": 3,
+          "change_pct": 150.0
+        },
+        {
+          "release_year": 1972,
+          "Movie": 4,
+          "TV Show": 1,
+          "total": 5,
+          "change_titles": 0,
+          "change_pct": 0.0
+        },
+        {
+          "release_year": 1973,
+          "Movie": 10,
+          "TV Show": 0,
+          "total": 10,
+          "change_titles": 5,
+          "change_pct": 100.0
+        },
+        {
+          "release_year": 1974,
+          "Movie": 6,
+          "TV Show": 1,
+          "total": 7,
+          "change_titles": -3,
+          "change_pct": -30.0
+        },
+        {
+          "release_year": 1975,
+          "Movie": 7,
+          "TV Show": 0,
+          "total": 7,
+          "change_titles": 0,
+          "change_pct": 0.0
+        },
+        {
+          "release_year": 1976,
+          "Movie": 9,
+          "TV Show": 0,
+          "total": 9,
+          "change_titles": 2,
+          "change_pct": 28.5714285714
+        },
+        {
+          "release_year": 1977,
+          "Movie": 6,
+          "TV Show": 1,
+          "total": 7,
+          "change_titles": -2,
+          "change_pct": -22.2222222222
+        },
+        {
+          "release_year": 1978,
+          "Movie": 7,
+          "TV Show": 0,
+          "total": 7,
+          "change_titles": 0,
+          "change_pct": 0.0
+        },
+        {
+          "release_year": 1979,
+          "Movie": 10,
+          "TV Show": 1,
+          "total": 11,
+          "change_titles": 4,
+          "change_pct": 57.1428571429
+        },
+        {
+          "release_year": 1980,
+          "Movie": 11,
+          "TV Show": 0,
+          "total": 11,
+          "change_titles": 0,
+          "change_pct": 0.0
+        },
+        {
+          "release_year": 1981,
+          "Movie": 12,
+          "TV Show": 1,
+          "total": 13,
+          "change_titles": 2,
+          "change_pct": 18.1818181818
+        },
+        {
+          "release_year": 1982,
+          "Movie": 17,
+          "TV Show": 0,
+          "total": 17,
+          "change_titles": 4,
+          "change_pct": 30.7692307692
+        },
+        {
+          "release_year": 1983,
+          "Movie": 11,
+          "TV Show": 0,
+          "total": 11,
+          "change_titles": -6,
+          "change_pct": -35.2941176471
+        },
+        {
+          "release_year": 1984,
+          "Movie": 12,
+          "TV Show": 0,
+          "total": 12,
+          "change_titles": 1,
+          "change_pct": 9.0909090909
+        },
+        {
+          "release_year": 1985,
+          "Movie": 9,
+          "TV Show": 1,
+          "total": 10,
+          "change_titles": -2,
+          "change_pct": -16.6666666667
+        },
+        {
+          "release_year": 1986,
+          "Movie": 11,
+          "TV Show": 2,
+          "total": 13,
+          "change_titles": 3,
+          "change_pct": 30.0
+        },
+        {
+          "release_year": 1987,
+          "Movie": 8,
+          "TV Show": 0,
+          "total": 8,
+          "change_titles": -5,
+          "change_pct": -38.4615384615
+        },
+        {
+          "release_year": 1988,
+          "Movie": 16,
+          "TV Show": 2,
+          "total": 18,
+          "change_titles": 10,
+          "change_pct": 125.0
+        },
+        {
+          "release_year": 1989,
+          "Movie": 15,
+          "TV Show": 1,
+          "total": 16,
+          "change_titles": -2,
+          "change_pct": -11.1111111111
+        },
+        {
+          "release_year": 1990,
+          "Movie": 19,
+          "TV Show": 3,
+          "total": 22,
+          "change_titles": 6,
+          "change_pct": 37.5
+        },
+        {
+          "release_year": 1991,
+          "Movie": 16,
+          "TV Show": 1,
+          "total": 17,
+          "change_titles": -5,
+          "change_pct": -22.7272727273
+        },
+        {
+          "release_year": 1992,
+          "Movie": 20,
+          "TV Show": 3,
+          "total": 23,
+          "change_titles": 6,
+          "change_pct": 35.2941176471
+        },
+        {
+          "release_year": 1993,
+          "Movie": 24,
+          "TV Show": 4,
+          "total": 28,
+          "change_titles": 5,
+          "change_pct": 21.7391304348
+        },
+        {
+          "release_year": 1994,
+          "Movie": 20,
+          "TV Show": 2,
+          "total": 22,
+          "change_titles": -6,
+          "change_pct": -21.4285714286
+        },
+        {
+          "release_year": 1995,
+          "Movie": 23,
+          "TV Show": 2,
+          "total": 25,
+          "change_titles": 3,
+          "change_pct": 13.6363636364
+        },
+        {
+          "release_year": 1996,
+          "Movie": 21,
+          "TV Show": 3,
+          "total": 24,
+          "change_titles": -1,
+          "change_pct": -4.0
+        },
+        {
+          "release_year": 1997,
+          "Movie": 34,
+          "TV Show": 4,
+          "total": 38,
+          "change_titles": 14,
+          "change_pct": 58.3333333333
+        },
+        {
+          "release_year": 1998,
+          "Movie": 32,
+          "TV Show": 4,
+          "total": 36,
+          "change_titles": -2,
+          "change_pct": -5.2631578947
+        },
+        {
+          "release_year": 1999,
+          "Movie": 32,
+          "TV Show": 7,
+          "total": 39,
+          "change_titles": 3,
+          "change_pct": 8.3333333333
+        },
+        {
+          "release_year": 2000,
+          "Movie": 33,
+          "TV Show": 4,
+          "total": 37,
+          "change_titles": -2,
+          "change_pct": -5.1282051282
+        },
+        {
+          "release_year": 2001,
+          "Movie": 40,
+          "TV Show": 5,
+          "total": 45,
+          "change_titles": 8,
+          "change_pct": 21.6216216216
+        },
+        {
+          "release_year": 2002,
+          "Movie": 44,
+          "TV Show": 7,
+          "total": 51,
+          "change_titles": 6,
+          "change_pct": 13.3333333333
+        },
+        {
+          "release_year": 2003,
+          "Movie": 51,
+          "TV Show": 8,
+          "total": 59,
+          "change_titles": 8,
+          "change_pct": 15.6862745098
+        },
+        {
+          "release_year": 2004,
+          "Movie": 55,
+          "TV Show": 9,
+          "total": 64,
+          "change_titles": 5,
+          "change_pct": 8.4745762712
+        },
+        {
+          "release_year": 2005,
+          "Movie": 67,
+          "TV Show": 13,
+          "total": 80,
+          "change_titles": 16,
+          "change_pct": 25.0
+        },
+        {
+          "release_year": 2006,
+          "Movie": 82,
+          "TV Show": 14,
+          "total": 96,
+          "change_titles": 16,
+          "change_pct": 20.0
+        },
+        {
+          "release_year": 2007,
+          "Movie": 74,
+          "TV Show": 14,
+          "total": 88,
+          "change_titles": -8,
+          "change_pct": -8.3333333333
+        },
+        {
+          "release_year": 2008,
+          "Movie": 113,
+          "TV Show": 22,
+          "total": 135,
+          "change_titles": 47,
+          "change_pct": 53.4090909091
+        },
+        {
+          "release_year": 2009,
+          "Movie": 118,
+          "TV Show": 34,
+          "total": 152,
+          "change_titles": 17,
+          "change_pct": 12.5925925926
+        },
+        {
+          "release_year": 2010,
+          "Movie": 153,
+          "TV Show": 39,
+          "total": 192,
+          "change_titles": 40,
+          "change_pct": 26.3157894737
+        },
+        {
+          "release_year": 2011,
+          "Movie": 145,
+          "TV Show": 40,
+          "total": 185,
+          "change_titles": -7,
+          "change_pct": -3.6458333333
+        },
+        {
+          "release_year": 2012,
+          "Movie": 173,
+          "TV Show": 63,
+          "total": 236,
+          "change_titles": 51,
+          "change_pct": 27.5675675676
+        },
+        {
+          "release_year": 2013,
+          "Movie": 225,
+          "TV Show": 61,
+          "total": 286,
+          "change_titles": 50,
+          "change_pct": 21.186440678
+        },
+        {
+          "release_year": 2014,
+          "Movie": 264,
+          "TV Show": 88,
+          "total": 352,
+          "change_titles": 66,
+          "change_pct": 23.0769230769
+        },
+        {
+          "release_year": 2015,
+          "Movie": 396,
+          "TV Show": 159,
+          "total": 555,
+          "change_titles": 203,
+          "change_pct": 57.6704545455
+        },
+        {
+          "release_year": 2016,
+          "Movie": 658,
+          "TV Show": 243,
+          "total": 901,
+          "change_titles": 346,
+          "change_pct": 62.3423423423
+        },
+        {
+          "release_year": 2017,
+          "Movie": 765,
+          "TV Show": 265,
+          "total": 1030,
+          "change_titles": 129,
+          "change_pct": 14.3174250832
+        },
+        {
+          "release_year": 2018,
+          "Movie": 767,
+          "TV Show": 379,
+          "total": 1146,
+          "change_titles": 116,
+          "change_pct": 11.2621359223
+        },
+        {
+          "release_year": 2019,
+          "Movie": 633,
+          "TV Show": 397,
+          "total": 1030,
+          "change_titles": -116,
+          "change_pct": -10.1221640489
+        },
+        {
+          "release_year": 2020,
+          "Movie": 517,
+          "TV Show": 436,
+          "total": 953,
+          "change_titles": -77,
+          "change_pct": -7.4757281553
+        },
+        {
+          "release_year": 2021,
+          "Movie": 277,
+          "TV Show": 315,
+          "total": 592,
+          "change_titles": -361,
+          "change_pct": -37.8803777545
+        }
+      ],
+      "methods": [
+        {
+          "language": "python",
+          "code": "Run python analyze.py; see aggregate() for years transformation."
+        }
+      ],
+      "source": {
+        "name": "Auspify supplied Dataset.csv",
+        "provider": "Google Drive",
+        "files": [
+          "data/raw/Dataset.csv"
+        ],
+        "updatedAt": "2021-09-25T00:00:00Z",
+        "links": [
+          {
+            "label": "Supplied dataset",
+            "url": "https://drive.google.com/file/d/1xDLw0Z9Uc3YHRgU6ExrZHzWfyRiVtfdz/view"
+          }
+        ],
+        "metricDefinitions": [
+          {
+            "label": "years",
+            "definition": "Count of title IDs in the supplied sample by original release year and content type. Zero means no record in this sample. 2021 is partial.",
+            "componentIds": [
+              "release-trend"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Retrieve assigned source",
+            "detail": "Google Drive fetch of supplied Dataset.csv, file ID 1xDLw0Z9Uc3YHRgU6ExrZHzWfyRiVtfdz; complete raw response, 1,071,619 bytes."
+          },
+          {
+            "title": "Clean and aggregate",
+            "detail": "analyze.py clean_data() and aggregate(); outputs retained under tasks/. Upstream collection methodology and country-tag meaning are undocumented."
+          }
+        ],
+        "caveats": [
+          "Historical supplied sample; latest date_added is 2021-09-25. Not a current Netflix catalog.",
+          "Count of title IDs in the supplied sample by original release year and content type. Zero means no record in this sample. 2021 is partial."
+        ]
+      }
+    },
+    "ratings": {
+      "rows": [
+        {
+          "rating": "TV-MA",
+          "Movie": 2062,
+          "TV Show": 1143,
+          "total": 3205,
+          "Movie_share_pct": 33.6598106432,
+          "TV Show_share_pct": 42.9054054054
+        },
+        {
+          "rating": "TV-14",
+          "Movie": 1427,
+          "TV Show": 730,
+          "total": 2157,
+          "Movie_share_pct": 23.2941560562,
+          "TV Show_share_pct": 27.4024024024
+        },
+        {
+          "rating": "TV-PG",
+          "Movie": 540,
+          "TV Show": 321,
+          "total": 861,
+          "Movie_share_pct": 8.8148873653,
+          "TV Show_share_pct": 12.0495495495
+        },
+        {
+          "rating": "R",
+          "Movie": 797,
+          "TV Show": 2,
+          "total": 799,
+          "Movie_share_pct": 13.0101207966,
+          "TV Show_share_pct": 0.0750750751
+        },
+        {
+          "rating": "PG-13",
+          "Movie": 490,
+          "TV Show": 0,
+          "total": 490,
+          "Movie_share_pct": 7.9986940908,
+          "TV Show_share_pct": 0.0
+        },
+        {
+          "rating": "TV-Y7",
+          "Movie": 139,
+          "TV Show": 194,
+          "total": 333,
+          "Movie_share_pct": 2.2690173033,
+          "TV Show_share_pct": 7.2822822823
+        },
+        {
+          "rating": "TV-Y",
+          "Movie": 131,
+          "TV Show": 175,
+          "total": 306,
+          "Movie_share_pct": 2.1384263794,
+          "TV Show_share_pct": 6.5690690691
+        },
+        {
+          "rating": "PG",
+          "Movie": 287,
+          "TV Show": 0,
+          "total": 287,
+          "Movie_share_pct": 4.684949396,
+          "TV Show_share_pct": 0.0
+        },
+        {
+          "rating": "TV-G",
+          "Movie": 126,
+          "TV Show": 94,
+          "total": 220,
+          "Movie_share_pct": 2.0568070519,
+          "TV Show_share_pct": 3.5285285285
+        },
+        {
+          "rating": "NR",
+          "Movie": 75,
+          "TV Show": 4,
+          "total": 79,
+          "Movie_share_pct": 1.2242899119,
+          "TV Show_share_pct": 0.1501501502
+        },
+        {
+          "rating": "G",
+          "Movie": 41,
+          "TV Show": 0,
+          "total": 41,
+          "Movie_share_pct": 0.6692784851,
+          "TV Show_share_pct": 0.0
+        },
+        {
+          "rating": "TV-Y7-FV",
+          "Movie": 5,
+          "TV Show": 1,
+          "total": 6,
+          "Movie_share_pct": 0.0816193275,
+          "TV Show_share_pct": 0.0375375375
+        },
+        {
+          "rating": "NC-17",
+          "Movie": 3,
+          "TV Show": 0,
+          "total": 3,
+          "Movie_share_pct": 0.0489715965,
+          "TV Show_share_pct": 0.0
+        },
+        {
+          "rating": "UR",
+          "Movie": 3,
+          "TV Show": 0,
+          "total": 3,
+          "Movie_share_pct": 0.0489715965,
+          "TV Show_share_pct": 0.0
+        }
+      ],
+      "methods": [
+        {
+          "language": "python",
+          "code": "Run python analyze.py; see aggregate() for ratings transformation."
+        }
+      ],
+      "source": {
+        "name": "Auspify supplied Dataset.csv",
+        "provider": "Google Drive",
+        "files": [
+          "data/raw/Dataset.csv"
+        ],
+        "updatedAt": "2021-09-25T00:00:00Z",
+        "links": [
+          {
+            "label": "Supplied dataset",
+            "url": "https://drive.google.com/file/d/1xDLw0Z9Uc3YHRgU6ExrZHzWfyRiVtfdz/view"
+          }
+        ],
+        "metricDefinitions": [
+          {
+            "label": "ratings",
+            "definition": "Distinct title IDs per source rating and content type. Type shares use each type total.",
+            "componentIds": [
+              "rating-mix"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Retrieve assigned source",
+            "detail": "Google Drive fetch of supplied Dataset.csv, file ID 1xDLw0Z9Uc3YHRgU6ExrZHzWfyRiVtfdz; complete raw response, 1,071,619 bytes."
+          },
+          {
+            "title": "Clean and aggregate",
+            "detail": "analyze.py clean_data() and aggregate(); outputs retained under tasks/. Upstream collection methodology and country-tag meaning are undocumented."
+          }
+        ],
+        "caveats": [
+          "Historical supplied sample; latest date_added is 2021-09-25. Not a current Netflix catalog.",
+          "Distinct title IDs per source rating and content type. Type shares use each type total."
+        ]
+      }
+    },
+    "genres": {
+      "rows": [
+        {
+          "genre": "International Movies",
+          "titles": 2752,
+          "share_of_all_titles_pct": 31.3083048919
+        },
+        {
+          "genre": "Dramas",
+          "titles": 2426,
+          "share_of_all_titles_pct": 27.5995449374
+        },
+        {
+          "genre": "Comedies",
+          "titles": 1674,
+          "share_of_all_titles_pct": 19.0443686007
+        },
+        {
+          "genre": "International TV Shows",
+          "titles": 1349,
+          "share_of_all_titles_pct": 15.3469852105
+        },
+        {
+          "genre": "Documentaries",
+          "titles": 869,
+          "share_of_all_titles_pct": 9.8862343572
+        },
+        {
+          "genre": "Action & Adventure",
+          "titles": 859,
+          "share_of_all_titles_pct": 9.7724687144
+        },
+        {
+          "genre": "TV Dramas",
+          "titles": 762,
+          "share_of_all_titles_pct": 8.6689419795
+        },
+        {
+          "genre": "Independent Movies",
+          "titles": 756,
+          "share_of_all_titles_pct": 8.6006825939
+        },
+        {
+          "genre": "Children & Family Movies",
+          "titles": 641,
+          "share_of_all_titles_pct": 7.2923777019
+        },
+        {
+          "genre": "Romantic Movies",
+          "titles": 616,
+          "share_of_all_titles_pct": 7.007963595
+        },
+        {
+          "genre": "Thrillers",
+          "titles": 577,
+          "share_of_all_titles_pct": 6.5642775882
+        },
+        {
+          "genre": "TV Comedies",
+          "titles": 573,
+          "share_of_all_titles_pct": 6.5187713311
+        },
+        {
+          "genre": "Crime TV Shows",
+          "titles": 469,
+          "share_of_all_titles_pct": 5.3356086462
+        },
+        {
+          "genre": "Kids' TV",
+          "titles": 448,
+          "share_of_all_titles_pct": 5.0967007964
+        },
+        {
+          "genre": "Docuseries",
+          "titles": 394,
+          "share_of_all_titles_pct": 4.4823663254
+        },
+        {
+          "genre": "Music & Musicals",
+          "titles": 375,
+          "share_of_all_titles_pct": 4.2662116041
+        },
+        {
+          "genre": "Romantic TV Shows",
+          "titles": 370,
+          "share_of_all_titles_pct": 4.2093287827
+        },
+        {
+          "genre": "Horror Movies",
+          "titles": 357,
+          "share_of_all_titles_pct": 4.0614334471
+        },
+        {
+          "genre": "Stand-Up Comedy",
+          "titles": 343,
+          "share_of_all_titles_pct": 3.9021615472
+        },
+        {
+          "genre": "Reality TV",
+          "titles": 255,
+          "share_of_all_titles_pct": 2.9010238908
+        },
+        {
+          "genre": "British TV Shows",
+          "titles": 252,
+          "share_of_all_titles_pct": 2.866894198
+        },
+        {
+          "genre": "Sci-Fi & Fantasy",
+          "titles": 243,
+          "share_of_all_titles_pct": 2.7645051195
+        },
+        {
+          "genre": "Sports Movies",
+          "titles": 219,
+          "share_of_all_titles_pct": 2.4914675768
+        },
+        {
+          "genre": "Anime Series",
+          "titles": 174,
+          "share_of_all_titles_pct": 1.9795221843
+        },
+        {
+          "genre": "Spanish-Language TV Shows",
+          "titles": 173,
+          "share_of_all_titles_pct": 1.96814562
+        },
+        {
+          "genre": "TV Action & Adventure",
+          "titles": 167,
+          "share_of_all_titles_pct": 1.8998862344
+        },
+        {
+          "genre": "Korean TV Shows",
+          "titles": 151,
+          "share_of_all_titles_pct": 1.7178612059
+        },
+        {
+          "genre": "Classic Movies",
+          "titles": 116,
+          "share_of_all_titles_pct": 1.3196814562
+        },
+        {
+          "genre": "LGBTQ Movies",
+          "titles": 102,
+          "share_of_all_titles_pct": 1.1604095563
+        },
+        {
+          "genre": "TV Mysteries",
+          "titles": 98,
+          "share_of_all_titles_pct": 1.1149032992
+        },
+        {
+          "genre": "Science & Nature TV",
+          "titles": 92,
+          "share_of_all_titles_pct": 1.0466439135
+        },
+        {
+          "genre": "TV Sci-Fi & Fantasy",
+          "titles": 83,
+          "share_of_all_titles_pct": 0.944254835
+        },
+        {
+          "genre": "TV Horror",
+          "titles": 75,
+          "share_of_all_titles_pct": 0.8532423208
+        },
+        {
+          "genre": "Anime Features",
+          "titles": 71,
+          "share_of_all_titles_pct": 0.8077360637
+        },
+        {
+          "genre": "Cult Movies",
+          "titles": 71,
+          "share_of_all_titles_pct": 0.8077360637
+        },
+        {
+          "genre": "Teen TV Shows",
+          "titles": 69,
+          "share_of_all_titles_pct": 0.7849829352
+        },
+        {
+          "genre": "Faith & Spirituality",
+          "titles": 65,
+          "share_of_all_titles_pct": 0.739476678
+        },
+        {
+          "genre": "TV Thrillers",
+          "titles": 57,
+          "share_of_all_titles_pct": 0.6484641638
+        },
+        {
+          "genre": "Stand-Up Comedy & Talk Shows",
+          "titles": 56,
+          "share_of_all_titles_pct": 0.6370875995
+        },
+        {
+          "genre": "Movies",
+          "titles": 53,
+          "share_of_all_titles_pct": 0.6029579067
+        },
+        {
+          "genre": "Classic & Cult TV",
+          "titles": 26,
+          "share_of_all_titles_pct": 0.2957906712
+        },
+        {
+          "genre": "TV Shows",
+          "titles": 16,
+          "share_of_all_titles_pct": 0.1820250284
+        }
+      ],
+      "methods": [
+        {
+          "language": "python",
+          "code": "Run python analyze.py; see aggregate() for genres transformation."
+        }
+      ],
+      "source": {
+        "name": "Auspify supplied Dataset.csv",
+        "provider": "Google Drive",
+        "files": [
+          "data/raw/Dataset.csv"
+        ],
+        "updatedAt": "2021-09-25T00:00:00Z",
+        "links": [
+          {
+            "label": "Supplied dataset",
+            "url": "https://drive.google.com/file/d/1xDLw0Z9Uc3YHRgU6ExrZHzWfyRiVtfdz/view"
+          }
+        ],
+        "metricDefinitions": [
+          {
+            "label": "genres",
+            "definition": "Distinct title IDs per listed genre. Multiple genre tags per title overlap.",
+            "componentIds": [
+              "genre-rankings"
+            ]
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Retrieve assigned source",
+            "detail": "Google Drive fetch of supplied Dataset.csv, file ID 1xDLw0Z9Uc3YHRgU6ExrZHzWfyRiVtfdz; complete raw response, 1,071,619 bytes."
+          },
+          {
+            "title": "Clean and aggregate",
+            "detail": "analyze.py clean_data() and aggregate(); outputs retained under tasks/. Upstream collection methodology and country-tag meaning are undocumented."
+          }
+        ],
+        "caveats": [
+          "Historical supplied sample; latest date_added is 2021-09-25. Not a current Netflix catalog.",
+          "Distinct title IDs per listed genre. Multiple genre tags per title overlap."
+        ]
+      }
+    }
+  }
+}

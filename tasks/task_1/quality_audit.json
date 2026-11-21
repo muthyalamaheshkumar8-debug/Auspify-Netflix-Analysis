@@ -1,0 +1,27 @@
+{
+  "raw_rows": 8790,
+  "clean_rows": 8790,
+  "removed_exact_duplicates": 0,
+  "duplicate_show_ids": 0,
+  "country_unknown": 287,
+  "director_unknown": 2588,
+  "invalid_dates": 0,
+  "potential_duplicate_title_rows": 8,
+  "missing_cells_raw": {
+    "show_id": 0,
+    "type": 0,
+    "title": 0,
+    "director": 0,
+    "country": 0,
+    "date_added": 0,
+    "release_year": 0,
+    "rating": 0,
+    "duration": 0,
+    "listed_in": 0
+  },
+  "release_year_min": 1925,
+  "release_year_max": 2021,
+  "latest_date_added": "2021-09-25",
+  "policy": "Unknown categories remain explicit; no country/director guessing. Identical title/type/year with distinct IDs are flagged, not deleted.",
+  "raw_sha256": "90b02beeb554921f81d3b9a774d0f7766f6a65240162565f6b4082165dc2a1d3"
+}
