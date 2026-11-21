@@ -3,7 +3,7 @@
 Prepared for **MUTHYALA MAHESH KUMAR** · Data Analysis Using Python · 29 October 2026.
 
 **Author:** [muthyalamaheshkumar8-debug](https://github.com/muthyalamaheshkumar8-debug)  
-**Live report (GitHub Pages):** https://muthyalamaheshkumar8-debug.github.io/auspify-netflix-analysis/
+**Live report (GitHub Pages):** https://muthyalamaheshkumar8-debug.github.io/Auspify-Netflix-Analysis/
 
 All six assigned project tasks are implemented. The guidelines require any four. This package contains project deliverables; it does not certify internship attendance, acceptance, submission, or company approval.
 
@@ -34,6 +34,22 @@ The input path defaults to `data/raw/Dataset.csv`. To analyze a compatible repla
 | 6. Business insights report | Interactive report HTML and React source in `report-app/`; full reviewed snapshot in `tasks/task_6/`; findings, limitations, and business implications in the report |
 
 PNG charts are actual Python-generated output evidence, not fabricated photographs of an application. Rendered report screenshots, where present, are identified separately. The demonstration video is optional and is not included.
+
+## Screenshots
+
+| Task 1 — Data quality audit | Task 2 — Content types | Task 3 — Country rankings |
+|---|---|---|
+| ![Task 1 data quality audit](screenshots/task_1_quality.png) | ![Task 2 content types](screenshots/task_2_content_types.png) | ![Task 3 country rankings](screenshots/task_3_countries.png) |
+
+| Task 4 — Release year trends | Task 5 — Genre rankings | Task 5 — Ratings by type |
+|---|---|---|
+| ![Task 4 release year trends](screenshots/task_4_release_trends.png) | ![Task 5 genre rankings](screenshots/task_5_genres.png) | ![Task 5 ratings by type](screenshots/task_5_ratings.png) |
+
+**Rendered interactive report:**
+
+![Rendered interactive report](screenshots/rendered_report.jpg)
+
+A live version of the interactive report is published with GitHub Pages: <https://muthyalamaheshkumar8-debug.github.io/Auspify-Netflix-Analysis/>
 
 ## Main findings
 
@@ -75,6 +91,6 @@ Implementation, analysis, validation code, charts, and documentation were produc
 
 ## Final submission
 
-The email specifies **22 November 2026** as the last submission date. Submit the source and output screenshots through the supplied Google Form. GitHub is requested only “if available”; no GitHub repository has been created or changed by this package. A Google sign-in is required to access the form in the available browser. The package is prepared for review; no form response or acceptance email has been sent.
+The email specifies **22 November 2026** as the last submission date. Submit the source and output screenshots through the supplied Google Form. GitHub is requested only "if available"; this repository was published by the author for review at <https://github.com/muthyalamaheshkumar8-debug/Auspify-Netflix-Analysis>. A Google sign-in is required to access the form in the available browser. The package is prepared for review; no form response or acceptance email has been sent.
 
 [Submission form](https://docs.google.com/forms/d/e/1FAIpQLSeJLbjJ2H-neq-GHe_RPNkDXYEZ839MaO3TBIesZT8VSrbieQ/viewform)
